@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentação - Calculadora FinançApp</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f9; color: #333; }
+        h1 { color: #0056b3; border-bottom: 2px solid #0056b3; padding-bottom: 10px; }
+        h2 { color: #333; margin-top: 30px; }
+        .class-box { background: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .method { margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #0056b3; }
+        .method-name { font-weight: bold; font-family: monospace; color: #d63384; }
+        .param { font-family: monospace; color: #555; }
+        .throws { color: #dc3545; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Documentação JavaDoc - Calculadora</h1>
+    
+    <div class="class-box">
+        <h2>Classe Calculadora</h2>
+        <p>Classe responsável por realizar cálculos matemáticos básicos para o FinançApp. Esta versão passou pelo processo de refatoração para melhorar a legibilidade.</p>
+        
+        <p><strong>Autor:</strong> Thiago Andrade</p>
+        <p><strong>Versão:</strong> 2.0</p>
+
+        <hr>
+
+        <h3>Métodos</h3>
+
+        <div class="method">
+            <h4 class="method-name">public double calc(int valorA, int valorB, String operacao)</h4>
+            <p>Executa uma operação matemática básica entre dois números inteiros.</p>
+            <ul>
+                <li><span class="param">valorA</span>: O primeiro número.</li>
+                <li><span class="param">valorB</span>: O segundo número.</li>
+                <li><span class="param">operacao</span>: O operador matemático (+, -, *, /).</li>
+            </ul>
+            <p><strong>Retorna:</strong> O resultado da operação como um número de ponto flutuante (double).</p>
+            <p class="throws">Lança: ArithmeticException (se houver divisão por zero)</p>
+            <p class="throws">Lança: IllegalArgumentException (se a operação for inválida ou nula)</p>
+        </div>
+    </div>
+
+</body>
+</html>
